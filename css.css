@@ -1,0 +1,11 @@
+.bg-image {
+    background-image: url(img/Howpay.png);  /*自己的電腦圖片資料夾位置*/
+    position: absolute;  /*絕對位置*/
+    left: 0;
+    right: 0;
+    top: 0;
+    bottom: 0;
+    background-position: center;
+    background-size: cover;
+    z-index: -999; /*設定圖片層級*/
+  }
