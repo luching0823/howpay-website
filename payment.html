@@ -1,0 +1,45 @@
+
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>搭配商家</title>
+    <link rel="stylesheet" href="css.css">
+
+
+</head>
+<body>
+    <nav>
+        <img src="img/Howpay-320.png" alt="logo">
+    </nav>
+    <form action="payment.php" method="GET" target="_self">
+        <p>
+            選擇想使用的行動支付工具
+        </p>
+        <p>
+            (最多選擇三種)
+        </p>
+        <br>
+        <form action="payment.php">
+            <input class = "choosePayment" type="checkbox" name="LinePay" id="LinePay" value="LinePay">
+            <label for="LinePay">Line Pay</label><br>
+            <input class = "choosePayment" type="checkbox" name="ApplePay" id="ApplePay" value="ApplePay">
+            <label for="ApplePay">Apple Pay</label><br>
+            <input class = "choosePayment" type="checkbox" name="GooglePay" id="GooglePay" value="GooglePay">
+            <label for="GooglePay">Google Pay</label><br>
+            <input class = "choosePayment" type="checkbox" name="SamsungPay" id="SamsungPay" value="SamsungPay">
+            <label for="SamsungPay">Samsung Pay</label><br>
+            <input class = "choosePayment" type="checkbox" name="JKOPay" id="JKOPay" value="JKOPay">
+            <label for="JKOPay">街口支付</label><br>
+            <input class = "choosePayment" type="checkbox" name="PiWallet"" id="PiWallet"" value="PiWallet"">
+            <label for="PiWallet"">Pi錢包</label><br>
+            <input class = "choosePayment" type="checkbox" name="taiwanPay" id="taiwanPay" value="taiwanPay">
+            <label for="taiwanPay">台灣Pay</label><br>
+            <input type="submit" value="確定">
+        </form>
+       
+        
+    </form>
+</body>
+</html>

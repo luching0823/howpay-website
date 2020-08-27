@@ -1,11 +1,54 @@
-.bg-image {
-    background-image: url(img/Howpay.png);  /*自己的電腦圖片資料夾位置*/
-    position: absolute;  /*絕對位置*/
-    left: 0;
-    right: 0;
-    top: 0;
-    bottom: 0;
-    background-position: center;
-    background-size: cover;
-    z-index: -999; /*設定圖片層級*/
-  }
+* {
+    background-color: #ece4e2;
+}
+nav{
+    width: 100%;
+    height: 100px;
+    text-align: center;
+    margin-bottom: 0;
+}
+nav img{
+    width: 100px;
+    height: 100px;
+}
+form{
+    margin-top: 0;
+    text-align: center;
+}
+br{
+    line-height: 30px;
+}
+label{
+    margin: 5px;
+    font-size: 20px;
+}
+input.choosePayment{
+    margin: 0;
+    width: 15px;
+    height: 15px;
+}
+p{
+    margin: 5px;
+    font-family: 'MicrosoftJhengHei',monospace;
+    font-size: 125%;
+    color: #69491a;
+}
+select{
+    font-family: 'MicrosoftJhengHei',monospace;
+    width: 50%;
+    height: 30px;
+    font-size: 105%;
+    margin: 5px;
+}
+input{
+    font-family: 'MicrosoftJhengHei',monospace;
+    border: 0;
+    border-radius: 5px;
+    margin-top: 10%;
+    color: #69491a;
+    background-color: #f6c200;
+    font-size: 100%;
+}
+input:hover{
+    background-color: #fff;
+}
