@@ -6,14 +6,14 @@
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
     <title>搭配商家</title>
     <link rel="stylesheet" href="css.css">
-
-
+    <script type = "text/javascript" src="jquery-3.5.1.js"></script>
+    
 </head>
 <body>
     <nav>
         <img src="img/Howpay-320.png" alt="logo">
     </nav>
-    <form action="payment.php" method="GET" target="_self">
+    <form action="payment.php" method="GET">
         <p>
             選擇想使用的行動支付工具
         </p>
@@ -21,25 +21,50 @@
             (最多選擇三種)
         </p>
         <br>
-        <form action="payment.php">
-            <input class = "choosePayment" type="checkbox" name="LinePay" id="LinePay" value="LinePay">
-            <label for="LinePay">Line Pay</label><br>
-            <input class = "choosePayment" type="checkbox" name="ApplePay" id="ApplePay" value="ApplePay">
-            <label for="ApplePay">Apple Pay</label><br>
-            <input class = "choosePayment" type="checkbox" name="GooglePay" id="GooglePay" value="GooglePay">
-            <label for="GooglePay">Google Pay</label><br>
-            <input class = "choosePayment" type="checkbox" name="SamsungPay" id="SamsungPay" value="SamsungPay">
-            <label for="SamsungPay">Samsung Pay</label><br>
-            <input class = "choosePayment" type="checkbox" name="JKOPay" id="JKOPay" value="JKOPay">
-            <label for="JKOPay">街口支付</label><br>
-            <input class = "choosePayment" type="checkbox" name="PiWallet"" id="PiWallet"" value="PiWallet"">
-            <label for="PiWallet"">Pi錢包</label><br>
-            <input class = "choosePayment" type="checkbox" name="taiwanPay" id="taiwanPay" value="taiwanPay">
-            <label for="taiwanPay">台灣Pay</label><br>
-            <input type="submit" value="確定">
-        </form>
-       
-        
+        <p>第一種工具</p>
+        <select id = "firstPayment" name="firstPayment">
+            <option value="LinePay">Line Pay</option>
+            <option value="ApplePay">Apple Pay</option>
+            <option value="GooglePay">Google Pay</option>
+            <option value="SamsungPay">Samsung Pay</option>
+            <option value="街口支付">街口支付</option>
+            <option value="Pi錢包">Pi錢包</option>
+            <option value="台灣Pay">台灣Pay</option>  
+        </select>
+        <p>第二種工具</p>
+        <select id = "secondPayment" name="secondPayment">
+            <option value="LinePay">Line Pay</option>
+            <option value="ApplePay">Apple Pay</option>
+            <option value="GooglePay">Google Pay</option>
+            <option value="SamsungPay">Samsung Pay</option>
+            <option value="街口支付">街口支付</option>
+            <option value="Pi錢包">Pi錢包</option>
+            <option value="台灣Pay">台灣Pay</option>  
+        </select>
+        <p>第三種工具</p>
+        <select id = "thirdPayment" name="thirdPayment">
+            <option value="LinePay">Line Pay</option>
+            <option value="ApplePay">Apple Pay</option>
+            <option value="GooglePay">Google Pay</option>
+            <option value="SamsungPay">Samsung Pay</option>
+            <option value="街口支付">街口支付</option>
+            <option value="Pi錢包">Pi錢包</option>
+            <option value="台灣Pay">台灣Pay</option>  
+        </select> 
+        <p>
+            <input id="submit" type="submit" value="確定">
+        </p>
     </form>
+    <script type = "text/javascript">
+        document.getElementById('submit').onclick = function(){
+            if ($('#firstPayment').val() == $('#secondPayment').val() || $('#secondPayment').val() == $('#thirdPayment').val() || $('#firstPayment').val() == $('#thirdPayment').val()){
+                alert("行動支付工具不可重複選擇");
+                return false;
+            } else {
+                return true;
+            }
+        };
+    </script>
+
 </body>
 </html>

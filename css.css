@@ -18,15 +18,6 @@ form{
 br{
     line-height: 30px;
 }
-label{
-    margin: 5px;
-    font-size: 20px;
-}
-input.choosePayment{
-    margin: 0;
-    width: 15px;
-    height: 15px;
-}
 p{
     margin: 5px;
     font-family: 'MicrosoftJhengHei',monospace;
