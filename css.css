@@ -18,6 +18,22 @@ form{
 br{
     line-height: 30px;
 }
+h2{
+    margin: 5px;
+    font-family: 'MicrosoftJhengHei',monospace;
+    color: #69491a;
+    text-align: center;
+}
+table{
+    font-family: 'MicrosoftJhengHei',monospace;
+    width: 100%;
+    border-collapse: collapse;
+}
+td, th {
+    border: 1px solid #69491a;
+    text-align: center;
+    padding: 6px;
+}
 p{
     margin: 5px;
     font-family: 'MicrosoftJhengHei',monospace;
