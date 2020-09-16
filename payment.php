@@ -1,6 +1,5 @@
 <?php
-        $firstPayment = $_GET["firstPayment"];
-        $secondPayment = $_GET["secondPayment"];
-        $thirdPayment = $_GET["thirdPayment"];
-        header("Location: googlemap.html");
+
+// $firstPayment = $_GET["firstPayment"];
+header("Location: googlemap.html");
 ?>

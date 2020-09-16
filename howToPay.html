@@ -13,32 +13,49 @@
     </nav>
     <form action="howToPay.php" method="GET" target="_self">
         <p>選擇信用卡</p>
-        <select name="card">
-            <option>大戶卡</option>
-            <option>Line Pay卡</option>
-            <option>GOGO卡</option>
-            <option>Ubear卡</option>
+        <select id="card" name="card">
+            <option value="大戶卡">大戶卡</option>
+            <option value="LINEPAY信用卡">Line Pay信用卡</option>
+            <option value="GOGO卡">GOGO卡</option>
+            <option value="UBear卡">Ubear卡</option>
+            <option value="Costco聯名卡">Costco聯名卡</option>
+            <option value="Pi聯名卡">Pi聯名卡</option>
+            <option value="街口聯名卡">街口聯名卡</option>
+            <option value="賴點卡">賴點卡</option>
+            <option value="饗樂生活卡">饗樂生活卡</option>
         </select>
         <p>選擇消費星期</p>
-        <select name="day">
-            <option>星期日</option>
-            <option>星期一</option>
-            <option>星期二</option>
-            <option>星期三</option>
-            <option>星期四</option>
-            <option>星期五</option>
-            <option>星期六</option>
+        <select id="week" name="week">
+            <option value="星期日">星期日</option>
+            <option value="星期一">星期一</option>
+            <option value="星期二">星期二</option>
+            <option value="星期三">星期三</option>
+            <option value="星期四">星期四</option>
+            <option value="星期五">星期五</option>
+            <option value="星期六">星期六</option>
         </select>
         <p>選擇消費類型</p>
-        <select name="type">
-            <option>日常用品</option>
-            <option>百貨公司</option>
-            <option>美妝保養</option>
-            <option>餐廳美食</option>
-            <option>飲料</option>
-            <option>服飾包鞋</option>
-            <option>3C產品</option>
-            <option>電影院</option>
+        <select id="type" name="type">
+            <option value="日常用品">日常用品</option>
+            <option value="購物網站">購物網站</option>
+            <option value="美妝保養">美妝保養</option>
+            <option value="美容美髮服務業">美容美髮服務業</option>
+            <option value="餐飲業">餐飲業</option>
+            <option value="服飾包鞋">服飾包鞋</option>
+            <option value="3C產品">3C產品</option>
+            <option value="休閒娛樂">休閒娛樂</option>
+            <option value="文教育樂用品">文教育樂用品</option>
+            <option value="教育學習">教育學習</option>
+            <option value="百貨公司">百貨公司</option>
+            <option value="旅館飯店業">旅館飯店業</option>
+            <option value="眼鏡行">眼鏡行</option>
+            <option value="醫藥零售">醫藥零售</option>
+            <option value="寵物用品及美容">寵物用品及美容</option>
+            <option value="加油站">加油站</option>
+            <option value="叫車服務">叫車服務</option>
+            <option value="外送服務">外送服務</option>
+            <option value="租車服務">租車服務</option>
+            <option value="航空業">航空業</option>
         </select>
         <p>
             <input type="submit" value="確定">

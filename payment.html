@@ -17,11 +17,7 @@
         <p>
             選擇想使用的行動支付工具
         </p>
-        <p>
-            (請選擇三種)
-        </p>
         <br>
-        <p>第一種工具</p>
         <select id = "firstPayment" name="firstPayment">
             <option value="LinePay">Line Pay</option>
             <option value="ApplePay">Apple Pay</option>
@@ -29,33 +25,17 @@
             <option value="SamsungPay">Samsung Pay</option>
             <option value="街口支付">街口支付</option>
             <option value="Pi錢包">Pi錢包</option>
-            <option value="台灣Pay">台灣Pay</option>  
+            <option value="台灣Pay">台灣Pay</option>
+            <option value="玉山Wallet">玉山Wallet</option>
+            <option value="悠遊付">悠遊付</option>
+              
         </select>
-        <p>第二種工具</p>
-        <select id = "secondPayment" name="secondPayment">
-            <option value="LinePay">Line Pay</option>
-            <option value="ApplePay">Apple Pay</option>
-            <option value="GooglePay">Google Pay</option>
-            <option value="SamsungPay">Samsung Pay</option>
-            <option value="街口支付">街口支付</option>
-            <option value="Pi錢包">Pi錢包</option>
-            <option value="台灣Pay">台灣Pay</option>  
-        </select>
-        <p>第三種工具</p>
-        <select id = "thirdPayment" name="thirdPayment">
-            <option value="LinePay">Line Pay</option>
-            <option value="ApplePay">Apple Pay</option>
-            <option value="GooglePay">Google Pay</option>
-            <option value="SamsungPay">Samsung Pay</option>
-            <option value="街口支付">街口支付</option>
-            <option value="Pi錢包">Pi錢包</option>
-            <option value="台灣Pay">台灣Pay</option>  
-        </select> 
+        <br>
         <p>
             <input id="submit" type="submit" value="確定">
         </p>
     </form>
-    <script type = "text/javascript">
+    <!-- <script type = "text/javascript">
         document.getElementById('submit').onclick = function(){
             if ($('#firstPayment').val() == $('#secondPayment').val() || $('#secondPayment').val() == $('#thirdPayment').val() || $('#firstPayment').val() == $('#thirdPayment').val()){
                 alert("行動支付工具不可重複選擇");
@@ -64,7 +44,7 @@
                 return true;
             }
         };
-    </script>
+    </script> -->
 
 </body>
 </html>
