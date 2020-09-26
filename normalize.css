@@ -379,12 +379,12 @@ table{
   width: 100%;
   border-collapse: collapse;
   margin: 6px;
+  table-layout: auto;
 }
 tr, td{
-  width: 100%;
   border: 1px solid #69491a;
   text-align: center;
-  padding: 6px;
+  padding: 3px;
 
 }
 p{
