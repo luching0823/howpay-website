@@ -5,7 +5,7 @@ require 'Place.php';
 
 //連線資料庫
 try {
-    $pdo = new PDO('mysql:host=localhost;dbname=howpaynd_db;charset=utf8mb4','howpaynd_pulin','cucu319044');
+    $pdo = new PDO('mysql:host=localhost;dbname=howpaynd_db;charset=utf8mb4','howpaynd_pulin','psw');
 }
 catch(PDOException $e){
     die($e->getMessage());

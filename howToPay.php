@@ -4,7 +4,7 @@ require 'Results.php';
 
 // 使用PDO方式連線資料庫
 try {
-    $pdo = new PDO('mysql:host=localhost;dbname=howpaynd_db;charset=utf8mb4','howpaynd_pulin','cucu319044');
+    $pdo = new PDO('mysql:host=localhost;dbname=howpaynd_db;charset=utf8mb4','howpaynd_pulin','psw');
 }
 catch(PDOException $e){
     die($e->getMessage());
