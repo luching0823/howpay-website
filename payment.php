@@ -23,8 +23,9 @@ $statement = $pdo->prepare($sql);
 $statement->execute();
 $results = $statement->fetchAll(PDO::FETCH_CLASS, 'Place');
 
+//將回傳回來的資料轉成JSON格式
 $place = json_encode($results,JSON_UNESCAPED_UNICODE);
-$data = json_decode($place, true);
+// $data = json_decode($place, true);
 ?>
 
 <!DOCTYPE html>
@@ -38,15 +39,16 @@ $data = json_decode($place, true);
 </head>
 <body>
     <div id="map"></div>
+    <!-- 將JSON格式的資料匯進來 -->
     <input type="hidden" id="city" name="city" value=<?php print_r($place);?>>
-
     <script type="text/javascript">
         
+        // 取得資料放到text
         var text = document.getElementById("city").value;
+        //資料放到text會變字串，所以要再轉一次格式
         var member = JSON.parse(text);
 
         var marker, map, lat, lng;
-
         function initMap() {
             //取得目前定位
             navigator.geolocation.getCurrentPosition((position) => {
@@ -60,6 +62,7 @@ $data = json_decode($place, true);
                 };
                 // 初始化地圖
                 map = new google.maps.Map(document.getElementById('map'), options);
+                //放置user location的地標
                 marker = new google.maps.Marker({
                     position: mapcenter,
                     map: map,
@@ -67,7 +70,7 @@ $data = json_decode($place, true);
                     animation: google.maps.Animation.DROP,
                     label: 'You'
                 });
-            
+                //資料內的地標
                 for (var i = 0; i < member.length; i++) {
                     var item = member[i];
                     var infowindow = new google.maps.InfoWindow();
@@ -77,6 +80,7 @@ $data = json_decode($place, true);
                         title: item.name,
                         data:'名稱:' + item.name
                     });
+                    //點擊marker跳出店家名稱的infoWindow
                     marker.addListener('click', function() {
                     infowindow.setContent( this.data );
                     infowindow.open(map, this);
